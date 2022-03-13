@@ -1,0 +1,703 @@
+/*------------------ Start Global Style ------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #f05006;
+    --white: #f7f1f1;
+    --dark: #2c3e50;
+    --sliver: #bdc3c7;
+    --black: #212222;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--main-color);
+    padding: 10px;
+}
+
+.nav .light-theme {
+    display: none;
+}
+
+
+/*------------------ End Global Style ------------------*/
+
+
+/*------------------ Start Multistylies ------------------*/
+
+
+/* start button style */
+
+.box-form button,
+.who .box1 button {
+    background-color: var(--main-color);
+    color: var(--white);
+    width: 50%;
+    font-weight: bold;
+    border-color: var(--main-color);
+    padding: 5px 15px;
+    transition: .7s ease-in-out;
+    -webkit-transition: .7s ease-in-out;
+    -moz-transition: .7s ease-in-out;
+    -ms-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
+    margin-top: 10px;
+}
+
+
+/* evd button style */
+
+
+/* start hover style */
+
+.box-info button:hover,
+.service .btn-serv:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+
+/* end hover style */
+
+.bg .box-form button:hover,
+.who .box1 button:hover,
+.news button:hover {
+    background-color: var(--white);
+    color: var(--dark);
+    border-color: var(--white);
+}
+
+.who,
+.test {
+    margin: 50px 0;
+}
+
+.choose,
+.test {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 15px 0;
+}
+
+.who .box1 hr,
+.news hr,
+.service hr {
+    width: 20%;
+    height: 3px;
+    background-color: black;
+}
+
+.choose hr,
+.test hr {
+    width: 10%;
+    height: 3px;
+    background-color: white;
+}
+
+.service .item img,
+.news .box-content img {
+    max-width: 100%;
+}
+
+
+/*------------------ End Multistylies ------------------*/
+
+
+/*------------------------------- Start Header Style ----------------------*/
+
+
+/* info style */
+
+header .info {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+header .info div {
+    margin: 0 25px;
+}
+
+header .info div svg {
+    color: var(--main-color);
+}
+
+
+/* acr style */
+
+header .acr {
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 10px 0;
+    height: 120px;
+}
+
+header .acr svg {
+    font-size: 30px;
+}
+
+header .acr .acr-con {
+    color: var(--white);
+}
+
+
+/* navbar style */
+
+header .nav,
+header .nav.sticky-navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px 0;
+    z-index: 999;
+}
+
+header .nav.sticky-navbar {
+    display: none;
+}
+
+.nav nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav.sticky-navbar {
+    width: 100%;
+    display: none;
+}
+
+.nav .searchinput {
+    display: none;
+}
+
+.nav nav ul li a {
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav nav ul li a:hover {
+    color: var(--sliver);
+}
+
+.nav svg {
+    color: var(--white);
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+.mobile-btn .line {
+    background-color: white;
+    width: 35px;
+    height: 3px;
+    margin: 5px 0;
+}
+
+
+/*------------------------------- End Header Style ----------------------*/
+
+
+/*------------------------------- Start Slider Style ----------------------*/
+
+
+/* slide 1 */
+
+.bg {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+
+/* slide 2 */
+
+.bg2 {
+    background-image: url(../img/bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+
+/* slide 3 */
+
+.bg3 {
+    background-image: url(../img/bg3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+
+/* background overlay style */
+
+.bg .overlay,
+.bg2 .overlay,
+.bg3 .overlay {
+    height: 100%;
+    background-color: rgba(49, 55, 61, .8);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+/* slide content style */
+
+.bg .box,
+.bg2 .box,
+.bg3 .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.bg .bg-con,
+.bg2 .bg-con,
+.bg3 .bg-con {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.bg .box-info h2,
+.bg2 .box-info h2,
+.bg3 .box-info h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.bg .box-info p,
+.bg2 .box-info p,
+.bg3 .box-info p {
+    color: var(--white);
+}
+
+.box-info button {
+    background-color: transparent;
+    color: var(--white);
+    border-color: white;
+    padding: 5px 15px;
+    transition: .7s ease-in-out;
+    -webkit-transition: .7s ease-in-out;
+    -moz-transition: .7s ease-in-out;
+    -ms-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
+}
+
+.bg .box-form,
+.bg2 .box-form,
+.bg3 .box-form {
+    background-color: rgba(22, 22, 22, 0.6);
+    padding: 15px;
+}
+
+.box-form form input {
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+}
+
+
+/*------------------------------- End Slider Style ----------------------*/
+
+
+/*------------------------------- Start Who Style ----------------------*/
+
+.who .row {
+    align-items: center;
+}
+
+.who .box1 h3 {
+    margin-bottom: 25px;
+}
+
+
+/*------------------------------- End Who Style ----------------------*/
+
+
+/*------------------------------- Start Choose Style ----------------------*/
+
+.choose .row .box-con {
+    display: flex;
+    align-items: flex-start;
+}
+
+.choose .row svg {
+    color: var(--main-color);
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+
+/*------------------------------- End Choose Style ----------------------*/
+
+
+/*------------------------------- Start Service Style ----------------------*/
+
+.service {
+    margin: 50px 0;
+    background-color: rgb(243, 240, 240);
+    padding: 15px;
+}
+
+.service .item {
+    position: relative;
+    margin-top: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+.service .item .item-con {
+    position: absolute;
+    top: 70%;
+}
+
+
+/* start service button style */
+
+.service .item .item-con button {
+    padding: 0 10px;
+    height: 40px;
+    background-color: var(--main-color);
+    color: var(--white);
+    font-weight: bold;
+    border-color: var(--main-color);
+    transition: .7s ease-in-out;
+    -webkit-transition: .7s ease-in-out;
+    -moz-transition: .7s ease-in-out;
+    -ms-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
+}
+
+.service .item .item-con button:hover {
+    background-color: var(--white);
+    color: var(--dark);
+    border-color: var(--white);
+}
+
+.service .btn-serv {
+    background-color: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+    font-weight: bold;
+    width: 20%;
+    height: 40px;
+    margin-top: 25px;
+    transition: .7s ease-in-out;
+    -webkit-transition: .7s ease-in-out;
+    -moz-transition: .7s ease-in-out;
+    -ms-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
+}
+
+
+/* end service button style */
+
+
+/*------------------------------- End Service Style ----------------------*/
+
+
+/*------------------------------- Start News Style ----------------------*/
+
+.news .box-content h4 {
+    color: var(--main-color);
+}
+
+.news .box-content p {
+    color: rgb(54, 53, 53);
+}
+
+.news button {
+    background-color: var(--main-color);
+    color: var(--white);
+    font-weight: bold;
+    border-color: var(--main-color);
+    padding: 5px 15px;
+    transition: .7s ease-in-out;
+    -webkit-transition: .7s ease-in-out;
+    -moz-transition: .7s ease-in-out;
+    -ms-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
+    margin-top: 10px;
+}
+
+
+/*------------------------------- End News Style ----------------------*/
+
+
+/*------------------------------- Start Test Style ----------------------*/
+
+.test .test-box {
+    display: flex;
+    align-items: center;
+}
+
+.test .test-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+/*------------------------------- End Test Style ----------------------*/
+
+
+/*------------------------------- Start Footer Style ----------------------*/
+
+footer {
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+/* start social media style */
+
+footer .social div {
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: rgb(77, 75, 75);
+    color: white;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .7s ease-in-out;
+    -webkit-transition: .7s ease-in-out;
+    -moz-transition: .7s ease-in-out;
+    -ms-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
+}
+
+footer .social div:hover {
+    transform: rotatey(360deg);
+    -webkit-transform: rotatey(360deg);
+    -moz-transform: rotatey(360deg);
+    -ms-transform: rotatey(360deg);
+    -o-transform: rotatey(360deg);
+    background-color: black !important;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+
+/* start icons color */
+
+footer .social div:first-child {
+    background-color: rgb(40, 40, 94);
+}
+
+footer .social div:nth-child(2) {
+    background-color: darkcyan;
+}
+
+footer .social div:nth-child(3) {
+    background-color: rgb(221, 46, 40);
+}
+
+footer .social div:last-child {
+    background-color: orangered;
+}
+
+
+/* end icons color */
+
+
+/* end social media style */
+
+footer p {
+    font-weight: bold;
+}
+
+footer .icon {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+footer .right h3 {
+    color: rgb(63, 63, 63);
+    margin: 20px 0;
+}
+
+
+/*------------------------------- End Footer Style ----------------------*/
+
+
+/*--------------------- Start Go To Top ----------------*/
+
+.go-top {
+    margin-bottom: 20px;
+    color: var(--main-color);
+    display: none;
+}
+
+
+/*------------------------ End Go To Top ---------------*/
+
+
+/*------------------------------- Start Media Query ----------------------*/
+
+
+/* start media 1200px */
+
+@media(max-width:1200px) {}
+
+
+/* end media 1200px */
+
+
+/* start media 992px */
+
+@media(max-width:992px) {
+    .service .btn-serv {
+        width: 30%;
+    }
+    header .nav nav {
+        display: none;
+    }
+    .mobile-btn {
+        display: block;
+    }
+    .choose .box-con p {
+        font-size: 15px;
+    }
+    .box-info p,
+    .box-form p,
+    .who p {
+        font-size: 20px;
+    }
+    .who .box1 button {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+
+/* end media 992 */
+
+
+/* start media 768px */
+
+@media(max-width:768px) {
+    .bg .box-form,
+    .bg2 .box-form,
+    .bg3 .box-form {
+        margin-top: 30px;
+    }
+    .bg .box-info,
+    .bg2 .box-info,
+    .bg3 .box-info,
+    .bg .box-form,
+    .bg2 .box-form,
+    .bg3 .box-form,
+    .who,
+    .test,
+    .service,
+    .choose,
+    .news {
+        text-align: center;
+    }
+    .box-info button,
+    .box-form button,
+    .who .box1 button {
+        width: 70%;
+    }
+    .who .box1 {
+        margin-bottom: 50px;
+    }
+    .choose .row .box-con {
+        text-align: center;
+        margin: 10px 0;
+        align-items: center;
+    }
+    .who .box1 hr,
+    .choose hr,
+    .service hr,
+    .test hr,
+    .news hr {
+        margin: 5px auto;
+    }
+    .news button {
+        width: 60%;
+    }
+    .news .box-overlay {
+        padding: 10px 0;
+    }
+    .test .test-box {
+        margin: 15px 0;
+    }
+    .service .btn-serv {
+        width: 60%;
+    }
+}
+
+
+/* end media 768px */
+
+
+/* start media 576px */
+
+@media(max-width:576px) {
+    .service .btn-serv {
+        width: 70%;
+    }
+    p {
+        font-size: 17px;
+    }
+}
+
+
+/* end media 576px */
+
+
+/*------------------------------- End Media Query ----------------------*/
